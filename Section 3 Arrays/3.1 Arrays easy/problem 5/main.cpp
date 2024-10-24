@@ -14,6 +14,8 @@ int main()
 
     // // approach 1 using temp array
     // // create a temp array 
+    // // tc : O(n)
+    // // sc : O(n) due to extra array (temp) used
     // int temp[7];
     // for(int i = 1;i<n;i++)
     // {
@@ -32,6 +34,9 @@ int main()
     
 
     // approach 2 without extra array
+    // shift the elements towards left by one place without extra array
+    // tc is O(n)
+    // sc is O(1) 
     int temp = arr[0];// temp = 1
     for(int i = 0;i<n-1;i++)
     {
